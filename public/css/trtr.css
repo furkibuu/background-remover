@@ -1,0 +1,83 @@
+/* Mavi-mor arka plan animasyonu */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #3a0ca3, #4361ee, #7209b7);
+  background-size: 300% 300%;
+  animation: gradientShift 8s ease infinite;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* Kart Tasarımı */
+.success-card {
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(15px);
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  animation: fadeIn 0.7s ease;
+}
+
+.success-card h1 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+/* Görsel */
+.image-preview img {
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-preview img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* Butonlar */
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  margin-top: 15px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btn-download {
+  background: linear-gradient(90deg, #4cc9f0, #7209b7);
+  color: white;
+}
+
+.btn-new {
+  background: rgba(255,255,255,0.15);
+  color: white;
+}
+
+.btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Animasyonlar */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
