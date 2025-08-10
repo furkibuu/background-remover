@@ -3,7 +3,7 @@
 Bu proje, Ruby ve Sinatra kullanarak görseller üzerinde çeşitli işlemler yapmanıza olanak tanır.  
 Özellikle **Remove.bg API** kullanarak arka plan kaldırma özelliğine sahiptir. Ayrıca görselleri farklı formatlara dönüştürme ve yeniden boyutlandırma seçenekleri içerir.
 
-![Background Remover](https://via.placeholder.com/800x350?text=Background+Remover)
+# Daha Tam Bitmedi
 
 ---
 
