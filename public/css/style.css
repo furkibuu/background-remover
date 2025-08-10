@@ -1,4 +1,4 @@
-/* Arka plan animasyonlu mavi-mor gradient */
+
 body {
   background: linear-gradient(135deg, #3a0ca3, #4361ee, #7209b7);
   background-size: 300% 300%;
@@ -9,7 +9,7 @@ body {
   align-items: center;
 }
 
-/* Kart Tasarımı */
+
 .upload-card {
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(15px);
@@ -26,7 +26,7 @@ body {
   transform: translateY(-5px);
 }
 
-/* Hoverable Radyo Seçenekleri */
+
 .hoverable {
   padding: 8px 12px;
   border-radius: 8px;
@@ -38,7 +38,7 @@ body {
   transform: scale(1.02);
 }
 
-/* Gradient Buton */
+
 .btn-gradient {
   background: linear-gradient(90deg, #4cc9f0, #7209b7);
   border: none;
@@ -54,7 +54,7 @@ body {
   box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
 }
 
-/* Dosya Yükleme Input */
+
 input[type="file"] {
   border-radius: 10px;
   background: rgba(255,255,255,0.85);
@@ -74,7 +74,7 @@ small {
 
 }
 
-/* Görsel Önizleme */
+
 .preview img {
   max-height: 250px;
   border-radius: 15px;
@@ -93,7 +93,7 @@ small {
 
 }
 
-/* Loading Overlay */
+
 #loading-overlay {
   position: fixed;
   top: 0;
@@ -120,7 +120,7 @@ small {
   margin-bottom: 15px;
 }
 
-/* Animasyonlar */
+
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
@@ -136,3 +136,4 @@ small {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
