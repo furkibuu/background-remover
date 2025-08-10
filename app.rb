@@ -11,14 +11,14 @@ set :root, __dir__
 set :data_folder, File.join(settings.public_folder, "data")
 set :views, File.join(__dir__, "views")
 
-REMOVE_BG_API_KEY = "a4wyjdbX8BxnSjhf4wFvbNPX"
+REMOVE_BG_API_KEY = "API_KEY"
 
-# ✅ MiniMagick geçici klasör ve CLI ayarı
+
 MiniMagick.configure do |config|
   config.tmpdir = File.join(__dir__, "public", "tmp")
 end
 
-# Gerekli klasörleri oluştur
+
 Dir.mkdir(settings.public_folder) unless Dir.exist?(settings.public_folder)
 Dir.mkdir(settings.data_folder) unless Dir.exist?(settings.data_folder)
 Dir.mkdir(File.join(__dir__, "public", "tmp")) unless Dir.exist?(File.join(__dir__, "public", "tmp"))
@@ -35,7 +35,7 @@ post "/upload" do
   filename = "#{SecureRandom.hex(6)}_#{File.basename(params[:file][:filename])}"
   save_path = File.join(settings.data_folder, filename)
 
-  # Dosyayı kaydet
+ 
   File.open(save_path, "wb") { |f| f.write(params[:file][:tempfile].read) }
   image = MiniMagick::Image.open(save_path)
 
@@ -83,3 +83,4 @@ post "/upload" do
   @download_link = "/data/" + File.basename(save_path)
   erb :success
 end
+
