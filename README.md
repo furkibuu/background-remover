@@ -42,7 +42,7 @@ Bu proje, Ruby ve Sinatra kullanarak görseller üzerinde çeşitli işlemler ya
 
 2. **Depoyu klonlayın**
    ```bash
-   git clone https://github.com/kullanici/background-remover.git
+   git clone https://github.com/furkibuu/background-remover.git
    cd background-remover
    ```
 
